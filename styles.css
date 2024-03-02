@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Cool-and-Beautiful-Nature-desktop-image-1920x1080.jpg);
+}
+.heading{
+    text-align: center;
+    color: #1a1813;
+    text-decoration-color: #1a1813;
+}
+
+.content {
+    position:absolute;
+    text-align:center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+#content-container {
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#content-default {
+    height: 100%;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+#content-iframe {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+#tabs-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #2d8e3e;
+    border-radius: 8px 8px 8px 8px;
+    position: relative;
+}
+.tab-content {
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.url-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom:45px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+}
+
+.url-input:hover {
+    border-color: #080c10;
+}
+
+.url-input:focus {
+    border-color: #db4b23;
+}
+
+.tab:hover {
+    background-color: #191c1a;
+}
+
+#add-tab {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 0 0 8px 8px;
+}
+
+.close-tab {
+    background-color: #e74c3c;
+    color: white;
+    border:#30bd5d;
+    padding: 3px;
+    text-align: right;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 40%;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+.tab .close-tab {
+    visibility: hidden;
+}
+
+.tab:hover .close-tab {
+    visibility: visible;
+}
